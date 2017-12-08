@@ -3,8 +3,11 @@
      "secret": "auth_secret",
      "key": "auth_key”
   },
-  "home": {
-    "ip": "0.0.0.0 or dynamic.redirect.dns",
-    "soundBarPort": "0000"
+  "dynu": {
+    "clientId": "fdsafdsa",
+    "secret": "fdsafdsa",
+    "password": "password",
+    "url": "https://example.com",
+    "domainName": "words.example.com"
   }
 }

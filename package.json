@@ -1,13 +1,13 @@
 {
-  "name": "home-hub",
+  "name": "update-ddns",
   "version": "0.1.0",
-  "description": "Serverless home IoT integration using AWS Lambda",
+  "description": "Update IP address for DDNS",
   "main": "lambda.js",
   "scripts": {
     "build": "./build.sh",
-    "create": "./provisioning/awsCreate.sh homeHub",
-    "deploy": "./provisioning/awsUpdate.sh homeHub",
-    "invoke": "./provisioning/awsInvoke.sh homeHub",
+    "create": "./provisioning/awsCreate.sh updateDDNS",
+    "deploy": "./provisioning/awsUpdate.sh updateDDNS",
+    "invoke": "./provisioning/awsInvoke.sh updateDDNS",
     "localInvoke": "node ./provisioning/localInvoke.js",
     "test": "jasmine",
     "test:watch": "watch jasmine ./"
@@ -15,7 +15,7 @@
   "author": "Ryan Spittler <ryanspittler@gmail.com>",
   "license": "Apache 2.0",
   "dependencies": {
-    "request-promise": "^0.4.3"
+    "request": "^2.83.0"
   },
   "devDependencies": {
     "proxyquire": "~1.7.2"
